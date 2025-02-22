@@ -12,26 +12,19 @@
    doesn't override these styles)
 */
 body {
-    /* TODO: Choose a color or font family from Chapter 5 examples,
-             explain in a comment why you picked it. */
     color: #333;
     font-family: Arial, sans-serif;
-    /* e.g. background-color: #f5f5f5; (optional) */
   }
   
-  /* Example: style your <h1> externally here */
   h1 {
-    /* TODO: pick a color or text-related property
-             that might compete with your inline or internal CSS. */
+    color: #8a23cf;
+    font-family: arial;
+    background-color: rgb(176, 192, 255);
   }
-  
-  /*
-    Add more rules if desired:
-    - Paragraphs (p)
-    - Footer
-    - etc.
-  */
-  
+      /* I chose a purple color for the body because it's a nice color.
+        I chose the font arial because it's simple and easy to read.
+        I chose a light blue for the background so the text is easy to read.*/
+
   /*
     For demonstration:
     - Show which rules get overridden by your internal <style> block

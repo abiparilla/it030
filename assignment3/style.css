@@ -7,27 +7,19 @@
     - Inheritance (how child elements get parent properties)
 */
 
-/* Example for body
-   (this might demonstrate inheritance if your <p> or <h1>
-   doesn't override these styles)
-*/
 body {
-    color: #1f0033;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    color: #67199b;
-    font-family: arial;
-    background-color: rgb(251, 143, 255);
-  }
-      /* I chose a purple color for the body because it's a nice color.
-        I chose the font arial because it's simple and easy to read.
-        I chose a light blue for the background so the text is easy to read.*/
+  color: #570189; /* I chose a purple color for the body because it's a nice color.*/
+  font-family: Arial, sans-serif; /* I chose the font arial because it's simple and easy to read.*/
+  background-color: #f5f5f5; /*I chose a light pink for the background so the text is easy to read.*/
+}
 
-  /*
-    For demonstration:
-    - Show which rules get overridden by your internal <style> block
-    - Which might get overridden by inline styles
-    - Comment your observations about the cascade and inheritance
-  *
+h1 {
+  color: blue;
+  font-size: 2.5em;
+}
+
+/*
+  Observations:
+  The `color` and `font-family` properties set on the `body` are inherited by the `<p>` and `<footer>` elements.
+  The `h1` inline style overrides the External CSS.
+*/

@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Assignment 3 - Chapter 5 Demo</title>
+
+  <!--TODO #1 (External CSS):-->
   <link href="style.css" type="text/css"rel="stylesheet" />
+
+  <!--TODO #2 (Internal CSS):-->
   <style type="text/css">
-    body {
-        font-family: arial;
-        background-color: rgb(204, 229, 255);}
+  body {
+      background-color: #f5f5f5;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
   </style>
+
 </head>
 
 <body>
-  <h1 style="color: pink; font-family: serif;">Welcome to My Chapter 5 Demo</h1>
+  <!--TODO #3 (Inline CSS):-->
+  <h1 style="color: hotpink; font-family: 'Georgia', serif;">Welcome to My Chapter 5 Demo</h1>
 
-  <!-- In this example of Inline CSS, the properties I used were color: and font-family: .
-   These properties might override the external or internal CSS because due to CSS rules,
-   you can create generic rules that apply to most elements by doing External CSS and then
-   override the properties on individual elements by doing inline CSS.-->
+  <!--
+  In this example of Inline CSS, the properties I used were:
+    color: hotpink;
+    font-family:
+  These properties might override the external or internal CSS because due to CSS rules, you can create generic
+  rules that apply to most elements by doing External CSS and then override the properties on individual elements
+  by doing inline CSS.
+  -->
 
   <p>
     This paragraph should demonstrate <strong>inheritance</strong>.
@@ -32,11 +45,8 @@
 
   <!--
     TODO #4 (Demonstrate Cascade):
-      For example, if your external CSS sets a color on <h1>,
-      and your internal CSS sets a different color, see which one wins.
-      Add a short comment explaining the result according to Chapter 5
-      on the CSS cascade.
-      External CSS wins due to 
+    Inline CSS wins. The <h1> text is hot pink because the inline CSS is more specific than the others.
+    The more specific rule will take precedence over more general ones.
   -->
 
   <footer>

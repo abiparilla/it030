@@ -8,14 +8,14 @@
 */
 
 body {
-  color: #3c005e; /* I chose a dark purple color because it's a nice color.*/
+  color: #0008ff; /* I chose a dark purple color because it's a nice color.*/
   font-family: Arial, sans-serif; /* I chose the font arial because it's simple and easy to read.*/
   background-color: #c5f7ff; /*I chose a light blue for the background so the text is easy to read.*/
   /* The 'color' and 'font-family' properties set on the <body> will be inherited by <p> and <footer> unless overridden.*/
 }
 
 h1 {
-  color: blue;
+  color: rgb(21, 255, 0);
   font-size: 2.5em;
 }
 

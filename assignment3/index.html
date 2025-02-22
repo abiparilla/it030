@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 3 - Chapter 5 Demo</title>
+  <link href="style.css" type="text/css"rel="stylesheet" />
+  <style type="text/css">
+    body {
+        font-family: arial;
+        background-color: rgb(185,179,175);}
+  </style>
+</head>
+
+<body>
+  <h1 style="color: pink; font-family: serif;">Welcome to My Chapter 5 Demo</h1>
+
+  <!-- In this example of Inline CSS, the properties I used were color: and font-family: .
+   These properties might override the external or internal CSS because due to CSS rules,
+   you can create generic rules that apply to most elements by doing External CSS and then
+   override the properties on individual elements by doing inline CSS.-->
+
+  <p>
+    This paragraph should demonstrate <strong>inheritance</strong>.
+    If you set a 'color' or 'font-family' on the <body> or a parent element,
+    it should automatically apply here, unless it's overridden.
+  </p>
+  <p>
+    Modify colors, fonts, text size, etc. in your external or internal CSS.
+    Observe how the CSS cascade and inheritance affect these paragraphs
+    vs. any inline-styled elements.
+  </p>
+
+  <!--
+    TODO #4 (Demonstrate Cascade):
+      For example, if your external CSS sets a color on <h1>,
+      and your internal CSS sets a different color, see which one wins.
+      Add a short comment explaining the result according to Chapter 5
+      on the CSS cascade.
+  -->
+
+  <footer>
+    <p>&copy; 2025 My Demo Site</p>
+  </footer>
+</body>
+</html>

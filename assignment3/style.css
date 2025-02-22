@@ -12,14 +12,14 @@
    doesn't override these styles)
 */
 body {
-    color: #333;
+    color: #1f0033;
     font-family: Arial, sans-serif;
   }
   
   h1 {
-    color: #8a23cf;
+    color: #67199b;
     font-family: arial;
-    background-color: rgb(176, 192, 255);
+    background-color: rgb(251, 143, 255);
   }
       /* I chose a purple color for the body because it's a nice color.
         I chose the font arial because it's simple and easy to read.

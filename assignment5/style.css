@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start
+    gap: 20px;
+    background-color: lightblue
+  }
+  
+  .container h1 {
+    margin: 0;
+  }
+  
+  @media (max-width: 480px) {
+	body {
+		background-color: lightblue; } }

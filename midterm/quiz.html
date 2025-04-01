@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A guide to skincare and clear skin.">
+    <title>Skin Type Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">About</a></li>
+    </ul>
+</nav>
+
+<section class="quiz-container">
+    <h2>Find Your Skin Type</h2>
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. How does your skin feel when you wake up?</p>
+            <label><input type="radio" name="q1" value="dry"> Dry and tight</label>
+            <label><input type="radio" name="q1" value="oily"> Greasy or oily, especially in the T-zone</label>
+            <label><input type="radio" name="q1" value="normal"> Balanced, soft and comfortable</label>
+            <label><input type="radio" name="q1" value="combination"> Dry in some areas, oily in others</label>
+            <label><input type="radio" name="q1" value="sensitive"> Sensitive with irritation and/or redness</label>
+        </div>
+
+        <div class="question">
+            <p>2. How does your skin react to products?</p>
+            <label><input type="radio" name="q2" value="oily"> I experience breakouts or shine, especially by midday.</label>
+            <label><input type="radio" name="q2" value="combination"> I sometimes experience dryness on my cheeks but oiliness on my T-zone</label>
+            <label><input type="radio" name="q2" value="normal"> My skin usually feels comfortable, and I don't break out often.</label>
+            <label><input type="radio" name="q2" value="dry"> It tends to get dry or flaky after using most products.</label>
+            <label><input type="radio" name="q1" value="sensitive"> My skin is sensitive and reacts to products</label>
+        </div>
+
+        <div class="question">
+            <p>3. Do you experience frequent breakouts?</p>
+            <label><input type="radio" name="q3" value="dry"> Only occasionally, mostly when I'm stressed.</label>
+            <label><input type="radio" name="q3" value="oily"> Yes, especially around my forehead, nose, and chin.</label>
+            <label><input type="radio" name="q3" value="normal"> Rarely or never.</label>
+            <label><input type="radio" name="q3" value="combination"> I get breakouts mainly in the T-zone, but my cheeks stay clear.</label>
+            <label><input type="radio" name="q1" value="sensitive"> No, but sometimes I get red patches or irritation.</label>
+        </div>
+
+        <div class="question">
+            <p>4. How does your skin feel after washing your face?</p>
+            <label><input type="radio" name="q4" value="oily"> Very shiny, especially on the forehead and nose</label>
+            <label><input type="radio" name="q4" value="combination"> Oily in some areas, dry in others</label>
+            <label><input type="radio" name="q4" value="normal"> Looks the same as in the morning</label>
+            <label><input type="radio" name="q4" value="dry"> Looks flaky or feels tight</label>
+            <label><input type="radio" name="q1" value="sensitive"> Red or irritated</label>
+        </div>
+
+        <button type="button" onclick="calculateSkinType()">Get My Skin Type</button>
+    </form>
+
+    <div id="result"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

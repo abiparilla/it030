@@ -1,65 +1,128 @@
-/* Default light mode styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: white;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
-    margin: 0;
+  font-family: Bookman, serif;
+  text-align: center;
+  background-color: #FFE8D6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Dark mode styles (will be applied via JavaScript) */
-.dark-mode {
-    background-color: black;
-    color: white;
+nav ul {
+  list-style: none;
+  padding: 10px;
+  background: white;
+  display: flex;
+  gap: 20px;
 }
 
-  .container {
-    display: flex;
-    justify-content: space-around;
-    background-color: lightblue;
-    padding: 15px;
-    } 
-  
-  .nav-item {
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .content-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .homepage, .sidebar {
-    padding: 30px;
-    text-align: left;
-  }
-  
-  .homepage {
-    background-color: yellow;
-  }
+nav ul li {
+  display: inline;
+}
 
-  .sidebar {
-    background-color: lightpink;
-  }
-  
-  .footer {
-    background-color: lightgreen;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  font-family: Snell roundhand, cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.text-container {
     text-align: center;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 18px;
-  }
+}
+
+header img {
+    width: 50px;
+    height: 100px;
+    object-fit: cover;
+}
+
+section {
+  background-color: #cb997e;
+  padding: 20px;
+  border-bottom: 5px solid #ddbea9;
+}
+
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.box {
+  width: 30%;
+  background: #a5a58d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.steps-section {
+  text-align: center; /* Centers the heading */
+}
+
+.steps-section ol {
+  text-align: left; /* Keeps list items left-aligned */
+  display: inline-block; /* Prevents full-width centering */
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #6b705c;
+}
+
+.quiz-container {
+  width: 50%;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+}
+
+.question {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #555;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
   @media (max-width: 768px) {
     .container {

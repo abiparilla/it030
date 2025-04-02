@@ -170,7 +170,7 @@ button:hover {
 
 @media (max-width: 480px) {
   body {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px; 
   }
   nav ul li {
     margin: 0 10px; /* Reduce margin for smaller screens */

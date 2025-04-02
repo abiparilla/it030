@@ -115,6 +115,11 @@ section h2 {
   margin-top: 10px;
 }
 
+.steps-section ol li {
+  margin-bottom: 15px; /* Add space below each list item */
+  line-height: 1.6; /* Optional: Increase line height for better readability */
+}
+
 footer {
   width: 100%; /* Make it span the full width of the page */
   background-color: #ABC4FF; /* Optional: Set a background color */
@@ -184,6 +189,8 @@ button:hover {
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Optional: Make the link bold */
 }
+
+
 
 .fade-in {
   animation: fadeIn 1s forwards;

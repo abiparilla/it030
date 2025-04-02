@@ -62,10 +62,15 @@ section h2 {
 }
 
 .skincare-content {
-  display: flex; /* Use flexbox for side-by-side layout */
-  align-items: center; /* Align the image and text vertically */
+  display: grid; /* Use grid layout */
+  grid-template-columns: 40% 1fr; /* Define two columns: 25% for the image, remaining space for the text */
+  align-items: center; /* Align items vertically in the center */
   gap: 20px; /* Add space between the image and the text */
   padding: 0 200px; /* Add horizontal padding to create space on the sides */
+}
+
+.skincare-content p {
+  text-align: justify; /* Optional: Justify the text for better readability */
 }
 
 .facemask-image {
@@ -78,12 +83,6 @@ section h2 {
 .skincare-content p {
   flex: 1; /* Allow the paragraph to take up the remaining space */
   text-align: justify; /* Optional: Justify the text for better readability */
-}
-
-section h2 {
-  background-color: #9DBEBB;
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .three-columns {
@@ -117,9 +116,33 @@ section h2 {
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  background: #ABC4FF;
+  width: 100%; /* Make it span the full width of the page */
+  background-color: #ABC4FF; /* Optional: Set a background color */
+  padding: 10px 0; /* Add some padding inside the footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  font-size: 12px; /* Smaller font size for footer text */
+  margin: 0; /* Remove any margin */
+  position: relative; /* Ensure it stays at the bottom of the content */
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Add space between the columns */
+  align-items: start; /* Align items to the top */
+}
+
+.footer-grid h3 {
+  font-size: 14px; /* Slightly larger font for headings */
+}
+
+.footer-grid a {
+  color: #333; /* Neutral color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-grid a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 .quiz-container {

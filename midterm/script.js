@@ -6,8 +6,6 @@ function calculateSkinType() {
         normal: 0
     };
 
-    const colors = ["#ac7777", "#acab77", "#ac9277", "#77ac77"];
-
     // Get all selected answers
     const questions = document.querySelectorAll("input[type='radio']:checked");
     questions.forEach(q => {

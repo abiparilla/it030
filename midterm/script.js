@@ -11,19 +11,18 @@ if (window.location.pathname === "/" || window.location.pathname.endsWith("index
 }
 
 function calculateSkinType() {
+    // Potential answers that the user can get
     let answers = {
         dry: 0,
         oily: 0,
         combination: 0,
         normal: 0
     };
-
-    // Get all selected answers
+    // Allows the users to select one option in each question
     const questions = document.querySelectorAll("input[type='radio']:checked");
     questions.forEach(q => {
         answers[q.value]++;
     });
-
     // Determine the highest score
     let skinType = Object.keys(answers).reduce((a, b) => (answers[a] > answers[b] ? a : b));
 

@@ -73,13 +73,6 @@ section h2 {
   text-align: justify; /* Optional: Justify the text for better readability */
 }
 
-.facemask-image {
-  width: 25%; /* Set the width of the image */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-}
-
 .skincare-content p {
   flex: 1; /* Allow the paragraph to take up the remaining space */
   text-align: justify; /* Optional: Justify the text for better readability */
@@ -190,92 +183,57 @@ button:hover {
   font-weight: bold; /* Optional: Make the link bold */
 }
 
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.products .item {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #B6CCFE;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content to the top */
+}
+
+.products .item h3 {
+  margin: 10px 0 0; /* Add some spacing above and below the text */
+}
+
+.products .item a {
+  color: #272e3d;
+  text-decoration: none;
+}
+
+.products .item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.product-image {
+  width: 100%; /* Make the image take up the full width of its container */
+  max-height: 150px; /* Limit the maximum height of the image */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensures the image fits nicely within the box */
+  margin-bottom: 10px; /* Add space below the image */
+}
 
 .fade-in {
   animation: fadeIn 1s forwards;
 }
-
 @keyframes fadeIn {
   from {
       opacity: 0;
   }
   to {
       opacity: 1;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 16px; 
-  }
-  nav ul li {
-    margin: 0 10px; /* Reduce margin for smaller screens */
-  }
-  .quiz-container {
-    width: 90%; /* Make the quiz container wider on smaller screens */
-  }
-  .skincare-content {
-    padding: 0 20px; /* Reduce horizontal padding on smaller screens */
-  }
-  .skincare-content img {
-    width: 100%; /* Make the image full-width on smaller screens */
-  }
-  .three-columns {
-    flex-direction: column; /* Stack the boxes on smaller screens */
-    align-items: stretch; /* Ensure all boxes have the same height */
-  }
-  .box {
-    width: 80%; /* Make the boxes wider on smaller screens */
-    margin-bottom: 20px; /* Add space between stacked boxes */
-    display: flex; /* Use flexbox for consistent height */
-    flex-direction: column; /* Ensure content stacks vertically */
-    justify-content: space-between; /* Distribute content evenly */
-  }
-}
-
-@media (max-width: 768px) {
-  .skincare-content {
-    flex-direction: column; /* Stack the image and text on smaller screens */
-    align-items: center; /* Center the items */
-  }
-
-  .skincare-content img {
-    width: 80%; /* Make the image larger on smaller screens */
-  }
-
-  .three-columns {
-    flex-direction: column; /* Stack the boxes on smaller screens */
-    align-items: center; /* Center the boxes */
-  }
-
-  .box {
-    width: 80%; /* Make the boxes wider on smaller screens */
-    margin-bottom: 20px; /* Add space between stacked boxes */
-  }
-}
-
-@media (max-width: 1024px) {
-  body {
-    font-size: 18px; /* Adjust font size for medium screens */
-  }
-  nav ul li {
-    margin: 0 15px; /* Adjust margin for medium screens */
-  }
-  .quiz-container {
-    width: 70%; /* Make the quiz container wider on medium screens */
-  }
-  .skincare-content {
-    padding: 0 50px; /* Adjust horizontal padding on medium screens */
-  }
-  .skincare-content img {
-    width: 70%; /* Make the image larger on medium screens */
-  }
-  .three-columns {
-    flex-direction: row; /* Keep the boxes side by side on medium screens */
-  }
-  .box {
-    width: 30%; /* Keep the boxes at 30% width on medium screens */
-    margin-bottom: 0; /* Remove bottom margin for side-by-side layout */
   }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A guide to skincare and clear skin.">
+    <meta name="description" content="Information about the author of the website.">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -22,9 +22,14 @@
 
 <section>
     <h2>About Me</h2>
-    <p style="text-align: left;">Hi! My name is Abigail Parilla and I am a sophomore at Hofstra University, pursuing a Bachelor of Business Administration in Information Systems. Based in Long Island, NY, I have always been fascinated by the intersection of technology and beauty, especially when it comes to skincare.</p>
-    <p style="text-align: left;">My interest in skincare started as a personal journey, but it quickly grew into something more. I love learning about new products, ingredients, and routines that promote healthy, glowing skin. Whether it is testing the latest serums or researching the science behind skincare innovations, I believe that taking care of your skin is a form of self-care and confidence.</p>
-    <p style="text-align: left;">Through my website, I hope to share insights, tips, and recommendations to help others achieve their best skin. If you have any questions or feedback, feel free to reach out!</p>
+    <div class="about-container">
+        <img src="photos/abigail.jpeg" alt="Abigail Parilla" class="about-image">
+        <div class="about-text">
+            <p>Hi! My name is Abigail Parilla and I am a sophomore at Hofstra University, pursuing a Bachelor of Business Administration in Information Systems. Based in Long Island, NY, I have always been fascinated by the intersection of technology and beauty, especially when it comes to skincare.</p>
+            <p>My interest in skincare started as a personal journey, but it quickly grew into something more. I love learning about new products, ingredients, and routines that promote healthy, glowing skin. Whether it is testing the latest serums or researching the science behind skincare innovations, I believe that taking care of your skin is a form of self-care and confidence.</p>
+            <p>Through my website, I hope to share insights, tips, and recommendations to help others achieve their best skin. If you have any questions or feedback, feel free to reach out!</p>
+        </div>
+    </div>
     <form action="submit_form.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -37,4 +42,23 @@
 
         <button type="submit">Submit</button>
     </form>
+
+    <footer>
+        <p class="disclaimer"><strong>Disclaimer:</strong> I am not a skincare expert. The information on this website is for general informational purposes only and not medical advice. If you have serious skin concerns, please consult a licensed dermatologist or healthcare professional.</p>
+        
+        <div class="footer-grid">
+            <div class="contact">
+                <h3>Contact:</h3>
+                <p>Phone number: <a href="tel:+15168351858">+1 (516) 835-1858</a></p>
+                <p>Email: <a href="mailto:aparilla1@pride.hofstra.edu">aparilla1@pride.hofstra.edu</a></p>
+            </div>
+            <div class="socials">
+                <h3>Socials:</h3>
+                <p><a href="https://www.linkedin.com/in/abigailparilla/" target="_blank">LinkedIn</a></p>
+                <p><a href="https://www.instagram.com/abiparilla" target="_blank">Instagram</a></p>
+                <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+            </div>
+        </div>
+    </footer>
+
 </section>

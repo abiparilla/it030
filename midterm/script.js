@@ -1,15 +1,3 @@
-if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
-    const colors = ["#edf2fb", "#fbedf5", "#fbf9ed"]; // light blue, light pink, light yellow
-    console.log("The first color in the array is:", colors[0]);
-    const userName = prompt("What is your name?");
-    const colorChoice = prompt("Pick a background color: 0 for light blue, 1 for light pink, 2 for light yellow");
-    const userInfo = {
-        name: userName,
-        selectedColor: colors[colorChoice] || colors[0]
-    };
-    document.body.style.backgroundColor = userInfo.selectedColor;
-}
-
 function calculateSkinType() {
     // Potential answers that the user can get
     let answers = {
@@ -50,4 +38,3 @@ function calculateSkinType() {
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = resultText; // Display the result with the navigation link
 }
-

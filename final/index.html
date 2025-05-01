@@ -19,14 +19,12 @@
 </head>
 
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quiz.html">Skin Type Quiz</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">About</a></li>
-        <li><a href="affiliate.html">Affiliates</a></li>
-    </ul>
+<nav class="container">
+    <a href="index.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+    <a href="quiz.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Quiz'})">Skin Care Quiz</a>
+    <a href="products.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Products'})">Products</a>
+    <a href="contact.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">About</a>
+    <a href="affiliate.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliates'})">Affiliates</a>
 </nav>
 
 <header>

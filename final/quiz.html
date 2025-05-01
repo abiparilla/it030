@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz to determine your skin type.">
+    <title>Skin Type Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3SGRSX2NB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F3SGRSX2NB');
+</script>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html">Skin Type Quiz</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">About</a></li>
+        <li><a href="affiliate.html">Affiliates</a></li>
+    </ul>
+</nav>
+
+<section class="quiz-container">
+    <h2>Find Your Skin Type</h2>
+    <img src="photos/skintypes.webp" alt="Different Skin types" class="skintypes-image">
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. How does your skin feel a few hours after washing your face (without applying any products)?</p>
+            <label><input type="radio" name="q1" value="dry"> Tight, flaky, or rough</label>
+            <label><input type="radio" name="q1" value="oily"> Shiny all over, especially on the forehead, nose, and chin (T-zone)</label>
+            <label><input type="radio" name="q1" value="normal"> Shiny in the T-zone but normal or dry on cheeks</label>
+            <label><input type="radio" name="q1" value="combination"> Smooth and balanced</label>
+        </div>
+
+        <div class="question">
+            <p>2. How often do you experience shine on your face?</p>
+            <label><input type="radio" name="q2" value="dry"> Never, my skin tends to look dull</label>
+            <label><input type="radio" name="q2" value="oily"> Often, within a few hours of washing</label>
+            <label><input type="radio" name="q2" value="combination"> Mostly on my T-zone, but not cheeks</label>
+            <label><input type="radio" name="q2" value="normal"> Rarely, only in very humid weather</label>
+        </div>
+
+        <div class="question">
+            <p>3. How does your skin react to moisturizer?</p>
+            <label><input type="radio" name="q3" value="dry"> Needs heavy creams, still feels dry sometimes</label>
+            <label><input type="radio" name="q3" value="oily"> Becomes greasy quickly or doesn't need much</label>
+            <label><input type="radio" name="q3" value="combination"> Feels good on cheeks but makes T-zone oily</label>
+            <label><input type="radio" name="q3" value="normal"> Absorbs well without feeling greasy or dry</label>
+        </div>
+
+        <div class="question">
+            <p>4. How often do you notice dry patches or flakiness?</p>
+            <label><input type="radio" name="q4" value="dry"> Often, especially in colder weather</label>
+            <label><input type="radio" name="q4" value="oily"> Almost never</label>
+            <label><input type="radio" name="q4" value="combination"> Sometimes on cheeks, but not T-zone</label>
+            <label><input type="radio" name="q4" value="normal"> Rarely</label>
+        </div>
+
+        <div class="question">
+            <p>5. How do your pores look?</p>
+            <label><input type="radio" name="q5" value="dry"> Tiny, sometimes skin looks dull or textured</label>
+            <label><input type="radio" name="q5" value="oily"> Large and noticeable, especially on the nose and forehead</label>
+            <label><input type="radio" name="q5" value="combination"> Large in the T-zone but small/normal on cheeks</label>
+            <label><input type="radio" name="q5" value="normal"> Small and barely visible</label>
+        </div>
+
+        <button type="button" onclick="calculateSkinType()">Get My Skin Type</button>
+    </form>
+
+    <div id="result-container">
+        <p id="result"></p>
+    </div>
+</section>
+
+<footer>
+    <p class="disclaimer"><strong>Disclaimer:</strong> I am not a skincare expert. The information on this website is for general informational purposes only and not medical advice. If you have serious skin concerns, please consult a licensed dermatologist or healthcare professional.</p>
+    
+    <div class="footer-grid">
+        <div class="contact">
+            <h3>Contact:</h3>
+            <p>Phone number: <a href="tel:+15168351858">+1 (516) 835-1858</a></p>
+            <p>Email: <a href="mailto:aparilla1@pride.hofstra.edu">aparilla1@pride.hofstra.edu</a></p>
+        </div>
+        <div class="socials">
+            <h3>Socials:</h3>
+            <p><a href="https://www.linkedin.com/in/abigailparilla/" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/abiparilla" target="_blank">Instagram</a></p>
+            <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

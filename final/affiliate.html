@@ -6,7 +6,6 @@
     <meta name="description" content="Affiliate pages.">
     <title>Affiliates</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" async></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3SGRSX2NB"></script>
@@ -30,9 +29,18 @@
 
 <section>
   <h2>Affiliates</h2>
-  <p><a href="https://jadacarterfrem.github.io/GIT-REPO/final/" target="_blank">a</a> - a</p>
-  <p><a href="https://alisancabezas.github.io/test/final/index.html" target="_blank">b</a> - b</p>
-  <p><a href="https://emmnun.github.io/finalproject/" target="_blank">c</a> - c</li>
+  <h3>Discover more about our trusted partners brands we proudly collaborate with!</h3>
+      <div class="affiliate-container">
+        <a href="https://jadacarterfrem.github.io/GIT-REPO/final/" target="_blank">
+          <button onclick="gtag('event', 'click', { 'event_category': 'affiliateClick', 'event_label': 'Bloom' });">Bloom</button>
+        </a>
+        <a href="https://alisancabezas.github.io/test/final/index.html" target="_blank">
+          <button onclick="gtag('event', 'click', { 'event_category': 'affiliateClick', 'event_label': 'Pruden Construction' });">Pruden Construction</button>
+        </a>
+        <a href="https://emmnun.github.io/finalproject/" target="_blank">
+          <button onclick="gtag('event', 'click', { 'event_category': 'affiliateClick', 'event_label': 'Volleyball World' });">Volleyball World</button>
+        </a>
+      </div>
 </section>
 
 <footer>
@@ -51,5 +59,6 @@
       </div>
   </div>
 </footer>
+<script src="script.js" async></script>
 </body>
 </html>

@@ -20,16 +20,18 @@
 
 <body>
 <nav class="container">
-    <a href="index.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
-    <a href="quiz.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Quiz'})">Skin Care Quiz</a>
-    <a href="products.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Products'})">Products</a>
-    <a href="contact.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">About</a>
-    <a href="affiliate.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliates'})">Affiliates</a>
+    <a href="index.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+    <a href="quiz.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Quiz'})">Skin Care Quiz</a>
+    <a href="products.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Products'})">Products</a>
+    <a href="faq.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'FAQ'})">FAQ</a>
+    <a href="contact.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">About</a>
+    <a href="affiliate.html" class="nav" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliates'})">Affiliates</a>
 </nav>
 
 <section class="quiz-container">
     <h2>Find Your Skin Type</h2>
     <img src="photos/skintypes.webp" alt="Different Skin types" class="skintypes-image">
+    <p style="font-size: 12px;">Photo by Charles Bollmann on <a href="https://bareskincare.com/blogs/dr-bollmanns-blog/tagged/how-to-tell-skin-type" target="_blank">Bare Skin Care</a></p>
     <form id="quiz-form">
         <div class="question">
             <p>1. How does your skin feel a few hours after washing your face (without applying any products)?</p>

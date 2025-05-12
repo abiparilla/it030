@@ -1,20 +1,46 @@
+function getCookie(name) {
+    const cookies = document.cookie.split('; ');
+    for (let c of cookies) {
+    const [key, value] = c.split('=');
+    if (key === name) return decodeURIComponent(value);
+    }
+    return null;
+    }
+    let userName = getCookie('name');
+    let userTheme = getCookie('theme');
+    if (!userName || !userTheme) {
+    userName = prompt("What's your name?");
+    userTheme = prompt("Do you prefer dark or light theme?").toLowerCase();
+    document.cookie = `name=${userName}; max-age=${60 * 60 * 24 * 7}; path=/`;
+    document.cookie = `theme=${userTheme}; max-age=${60 * 60 * 24 * 7}; path=/`;
+    }
+
+    const welcome = document.getElementById("welcome-message");
+    if (welcome && userName) {
+    welcome.textContent = `Welcome back, ${userName}`;
+    }
+
+    if (userTheme === 'dark') {
+    document.body.style.backgroundColor = "#121212";
+    document.body.style.color = "#f1f1f1";
+    } else {
+    document.body.style.backgroundColor = "#ffffff";
+    document.body.style.color = "#121212";
+    }    
+
 function calculateSkinType() {
-    // Potential answers that the user can get
     let answers = {
         dry: 0,
         oily: 0,
         combination: 0,
         normal: 0
     };
-    // Allows the users to select one option in each question
     const questions = document.querySelectorAll("input[type='radio']:checked");
     questions.forEach(q => {
         answers[q.value]++;
     });
-    // Determine the highest score
     let skinType = Object.keys(answers).reduce((a, b) => (answers[a] > answers[b] ? a : b));
 
-    // Display the result
     let resultText = "";
     switch (skinType) {
         case "dry":
@@ -36,5 +62,5 @@ function calculateSkinType() {
     }
 
     const resultElement = document.getElementById("result");
-    resultElement.innerHTML = resultText; // Display the result with the navigation link
+    resultElement.innerHTML = resultText;
 }

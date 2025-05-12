@@ -11,12 +11,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 20px;
   margin: 20px;
-  background: #D7E3FC;
-  text-align: center;
+  background: #6495ED;
+  gap: 60px; 
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  color: #333;
+  text-decoration: none;
 }
 
 /*Title Header*/
@@ -38,7 +43,7 @@ section {
   padding: 20px;
 }
 section h2 {
-  background: #CCDBFD;
+  background: #6495ED;
   font-size: 24px;
   margin: 20px 0;
   padding: 10px;
@@ -64,7 +69,7 @@ section h2 {
 }
 .box {
   width: 30%;
-  background: #B6CCFE;
+  background: #4F7CD9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -85,7 +90,7 @@ section h2 {
 /* Footer */
 footer {
   width: 100%;
-  background: #ABC4FF;
+  background: #6495ED;
   padding: 10px 0;
   font-size: 12px;
   position: relative; 
@@ -119,10 +124,10 @@ footer {
   margin: 40px auto;
   text-align: center;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px;
   border-radius: 10px; /* Rounded corners */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  background: #B6CCFE;
+  background: #4F7CD9;
 }
 .question {
   text-align: left;
@@ -153,20 +158,15 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  align-items: center;
   margin-top: 20px;
 }
 .products .item {
   text-align: center;
   border: 1px solid #ccc;
   padding: 10px;
-  background: #B6CCFE;
+  background: #6495ED;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-.products .item a {
-  color: #272e3d;
-  text-decoration: none;
 }
 .products .item a:hover {
   text-decoration: underline;
@@ -177,6 +177,29 @@ button:hover {
   height: auto;
   margin-bottom: 10px;
   display: block;
+}
+
+/* FAQ Page */
+.container {
+  display: flex;
+}
+
+.faq {
+  flex: 3;
+  padding-right: 20px;
+}
+
+.image {
+  flex: 1;
+}
+
+.faq p {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* Contact Page */

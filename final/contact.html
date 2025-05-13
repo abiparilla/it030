@@ -7,7 +7,6 @@
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3SGRSX2NB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -38,6 +37,11 @@
         </div>
     </div>
 </section>
+
+<button onclick="gtag('event', 'CTR', {
+  event_category: 'callToAction',
+  event_label: 'Contact'
+}); window.location.href = 'mailto:aparilla1@pride.hofstra.edu';">Contact</button>
 
 <footer>
     <p class="disclaimer"><strong>Disclaimer:</strong> I am not a skincare expert. The information on this website is for general informational purposes only and not medical advice. If you have serious skin concerns, please consult a licensed dermatologist or healthcare professional.</p>    
